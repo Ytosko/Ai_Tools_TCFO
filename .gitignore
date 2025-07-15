@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+app.config.json
+# Build output
+build
+dist
+robots.txt
+sitemap.xml
