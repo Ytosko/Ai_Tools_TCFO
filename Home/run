@@ -1,0 +1,45 @@
+# HTTP VirtualHost (Port 80) - Redirect to HTTPS
+<VirtualHost *:80>
+    ServerName tools.togethercfo.com
+    ServerAlias www.tools.togethercfo.com
+
+    # Redirect all HTTP traffic to HTTPS
+    Redirect permanent / https://tools.togethercfo.com/
+
+</VirtualHost>
+
+# HTTPS VirtualHost (Port 443) - SSL Configuration
+<VirtualHost *:443>
+    LogLevel debug
+    ServerName tools.togethercfo.com
+    ServerAlias www.tools.togethercfo.com
+
+    SSLEngine on
+    SSLProxyEngine on
+
+    SSLCertificateFile /etc/letsencrypt/live/tools.togethercfo.com/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/tools.togethercfo.com/privkey.pem
+
+    <Proxy *>
+        Require all granted
+    </Proxy>
+
+    # Main app proxy (e.g., homepage and other tools)
+    <Location />
+        ProxyPass https://tools.togethercfo.com:7300/
+        ProxyPassReverse https://tools.togethercfo.com:7300/
+    </Location>
+
+    # SEO Analyzer tool
+    <Location /seo-analyzer>
+        ProxyPass https://tools.togethercfo.com:7301/
+        ProxyPassReverse https://tools.togethercfo.com:7301/
+    </Location>
+
+    # Proxy
+    <Location /proxy/>
+        ProxyPass https://tools.togethercfo.com:7303/
+        ProxyPassReverse https://tools.togethercfo.com:7303/
+    </Location>
+</VirtualHost>
+

@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "name": "AiTools",
+            "script": "npx",
+            "interpreter": "none",
+            "args": "serve -s . --listen 7300 --ssl-cert '/etc/letsencrypt/live/tools.togethercfo.com/fullchain.pem' --ssl-key '/etc/letsencrypt/live/tools.togethercfo.com/privkey.pem'"
+        }
+    ]
+}
