@@ -14,6 +14,15 @@ Together CFO AI Tools Hub is your one-stop destination for all AI-powered utilit
 - Performance and Core Web Vitals scoring
 - AI-powered content recommendations
 
+### 🌐 [Proxy Server](https://tools.togethercfo.com/proxy/)
+- Bypass content restrictions securely
+- Test geo-specific SEO or analytics setups
+- Lightweight and fast proxy UI
+- Performance and Core Web Vitals scoring
+- AI-powered content recommendations
+
+*(More tools will be listed here as they are added)*
+
 *(More tools will be listed here as they are added)*
 
 ## 🚀 Why Use the AI Tools Hub?
