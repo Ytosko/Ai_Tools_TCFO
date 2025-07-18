@@ -21,6 +21,12 @@ Together CFO AI Tools Hub is your one-stop destination for all AI-powered utilit
 - Performance and Core Web Vitals scoring
 - AI-powered content recommendations
 
+
+### 🌐 [IP Analyzer](https://tools.togethercfo.com/ip-analyzer)
+- Analyze any IP Adress
+- See Location
+- Lightweight and fast UI
+
 *(More tools will be listed here as they are added)*
 
 *(More tools will be listed here as they are added)*
